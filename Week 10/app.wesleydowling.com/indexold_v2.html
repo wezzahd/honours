@@ -1,0 +1,155 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="single-page-icon.png">
+
+  <link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+
+  <!--script language="javascript" type="text/javascript" src="p5.min.js"></script>-->
+  <!-- uncomment lines below to include extra p5 libraries -->
+  <!--<script language="javascript" src="libraries/p5.dom.js"></script>-->
+  <!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
+  <!--<script language="javascript" type="text/javascript" src="sketch.js"></script>-->
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style> body {
+  	padding: 0;
+  	margin: 0;
+  	display: flex;
+
+	  /* This centers our sketch horizontally. */
+	  justify-content: center;
+
+	  /* This centers our sketch vertically. */
+	  align-items: center;
+
+  	}
+    <style>
+          .ad2hs-prompt {
+            background-color: rgb(59, 134, 196); /* Blue */
+            border: none;
+            display: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            position: absolute;
+            margin: 0 1rem 1rem;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: calc(100% - 32px);
+          }
+
+          .ios-prompt {
+            background-color: #fcfcfc;
+            border: 1px solid #666;
+            display: none;
+            padding: 0.8rem 1rem 0 0.5rem;
+            text-decoration: none;
+            font-size: 16px;
+            color: #555;
+            position: absolute;
+            margin: 0 auto 1rem;
+            left: 1rem;
+            right: 1rem;
+            bottom: 0;
+          }
+        </style>
+  </style>
+
+  <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+<meta name="apple-mobile-web-app-title" content="BlackHole" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="msapplication-config" content="/browserconfig.xml">
+
+
+
+
+
+</head>
+
+<body>
+<!--Hello world -->
+
+<app-root></app-root>
+
+   <button type="button" class="ad2hs-prompt">Install Web App</button>
+   <div class="ios-prompt">
+     <span style="color: rgb(187, 187, 187); float: right; margin-top: -14px; margin-right: -11px;">&times;</span>
+     <img src="https://svgshare.com/i/AEL.svg" style="float: left; height: 80px; width: auto; margin-top: -8px; margin-right: 1rem;">
+     <p style="margin-top: -3px; line-height: 1.3rem;">To install this Web App on your iPhone/iPad press <img src="https://svgshare.com/i/AFm.svg" style="display: inline-block; margin-top: 4px; margin-bottom: -4px; height: 20px; width: auto;"> and then Add to Home Screen.</p>
+   </div>
+
+
+
+ <script type="text/javascript">
+     if ('serviceWorker' in navigator) {
+       navigator.serviceWorker.register('service-worker.js')
+         .then(() => console.log('service worker installed'))
+         .catch(err => console.error('Error', err));
+     }
+     function addToHomeScreen() {
+       let a2hsBtn = document.querySelector(".ad2hs-prompt");  // hide our user interface that shows our A2HS button
+       a2hsBtn.style.display = 'none';  // Show the prompt
+       deferredPrompt.prompt();  // Wait for the user to respond to the prompt
+       deferredPrompt.userChoice
+         .then(function(choiceResult){
+       if (choiceResult.outcome === 'accepted') {
+         console.log('User accepted the A2HS prompt');
+       } else {
+         console.log('User dismissed the A2HS prompt');
+       }
+       deferredPrompt = null;
+     });}
+     function showAddToHomeScreen() {
+       let a2hsBtn = document.querySelector(".ad2hs-prompt");
+       a2hsBtn.style.display = "block";
+       a2hsBtn.addEventListener("click", addToHomeScreen);
+     }
+     let deferredPrompt;
+     window.addEventListener('beforeinstallprompt', function (e) {
+       // Prevent Chrome 67 and earlier from automatically showing the prompt
+       e.preventDefault();
+       // Stash the event so it can be triggered later.
+       deferredPrompt = e;
+       showAddToHomeScreen();
+     });
+
+     function showIosInstall() {
+       let iosPrompt = document.querySelector(".ios-prompt");
+       iosPrompt.style.display = "block";
+       iosPrompt.addEventListener("click", () => {
+         iosPrompt.style.display = "none";
+       });
+     }
+
+     // Detects if device is on iOS
+     const isIos = () => {
+       const userAgent = window.navigator.userAgent.toLowerCase();
+       return /iphone|ipad|ipod/.test( userAgent );
+     }
+     // Detects if device is in standalone mode
+     const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+     // Checks if should display install popup notification:
+     if (isIos() && !isInStandaloneMode()) {
+       // this.setState({ showInstallMessage: true });
+       showIosInstall();
+     }
+   </script>
+</body>
+</html>
