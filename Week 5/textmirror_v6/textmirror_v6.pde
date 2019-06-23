@@ -1,6 +1,3 @@
-// Exercise 17-9: Using textWidth(), redo Example 17-4 (the text "mirror") to use a 
-// non-fixed-width font with proper character spacing.
-
 
 import processing.video.*;
 
