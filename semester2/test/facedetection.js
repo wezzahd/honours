@@ -35,7 +35,7 @@ async function updateDetections() {
  const useTinyModel = true
 
  //const detections = await faceapi.detectAllFaces(capture.elt, new faceapi.TinyFaceDetectorOptions({ inputSize: 128 })).withAgeAndGender()
- const detections = await faceapi.detectAllFaces(capture.elt, new faceapi.TinyFaceDetectorOptions({ inputSize: 320 }))
+ const detections = await faceapi.detectAllFaces(capture.elt, new faceapi.TinyFaceDetectorOptions({ inputSize: 512 }))
 
  const canvas = document.getElementById('mycanvas')  //id required for p5 canvas
  const displaySize = { width: capture.width, height: capture.height }
