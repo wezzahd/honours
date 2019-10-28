@@ -79,18 +79,18 @@ fullscr.style('position','absolute');
 
 
   link = createA('https://www.wesleydowling.com', 'Wesley Dowling');
-  link.class("didactic");
+  link.class("didacticleft");
   link.position(20, 60);
   //link.size(width- 20, height - 200);
 
 
   if (isMobile == false) {
     inst = createP('Instructions: click to reset');
-  inst.class("didactic");
+  inst.class("didacticleft");
     inst.position(20, 70);
   }else{
       inst = createP('Instructions: tap to reset');
-    inst.class("didactic");
+    inst.class("didacticleft");
     inst.position(20, 70);
   }
 

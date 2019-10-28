@@ -266,8 +266,8 @@ function mousePressed() {
       text_dict.remove();
       link.remove();
       inst_button.remove();
-   fullscr.remove();
-   inst.remove();
+      fullscr.remove();
+      inst.remove();
     }
   }
 

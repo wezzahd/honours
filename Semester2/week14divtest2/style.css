@@ -31,3 +31,11 @@ canvas {
   text-align: center;
   display: block
 }
+
+.didacticleft {
+	font-family: monospace;
+	color: #000000;
+	font-size: 16pt;
+  text-align: left;
+  display: block
+}
