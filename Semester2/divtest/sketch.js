@@ -34,7 +34,10 @@ text_dict.size(width- 20, height - 100);
 
 function mousePressed(){
 
+if (mouseY > height -100 && mouseY < height){
+
   did_toggle = !did_toggle;
+}
 
 if (did_toggle == true){
   didactic();
