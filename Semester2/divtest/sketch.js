@@ -3,6 +3,13 @@ var text_dict;
 var did_toggle = false;
 var cnv;
 
+
+// document.addEventListener('touchmove', function(event) {
+//   if (event.scale !== 1) {
+//     event.preventDefault();
+//   }
+// }, false);
+
 function setup() {
   cnv = createCanvas(windowWidth, windowHeight);
   cnv.style('display', 'block');
@@ -32,7 +39,9 @@ console.log($scrollableElement);
 }
 
 
-
+// function touchMoved(event) {
+//   return false;
+// }
 
 
 
