@@ -57,24 +57,24 @@ scrollLock.disablePageScroll($scrollableElement);
 
 function instructions () {
 
-  pg.push();
-  pg.noStroke();
-  pg.fill(255,150);
-  pg.rectMode(CENTER);
-  pg.rect(width/2,height/2, width, height);
-
-
-  if (instruction_toggle == true) {
-
- if (isMobile == true && width < height){
-   pg.image(close, width-40, 50, 30, 30);
-      }else{
-        pg.image(close, width-40, 30, 30, 30);
-}
-  }
-
-
-
-pg.pop();
+//   pg.push();
+//   pg.noStroke();
+//   pg.fill(255,150);
+//   pg.rectMode(CENTER);
+//   pg.rect(width/2,height/2, width, height);
+//
+//
+//   if (instruction_toggle == true) {
+//
+//  if (isMobile == true && width < height){
+//    pg.image(close, width-40, 50, 30, 30);
+//       }else{
+//         pg.image(close, width-40, 30, 30, 30);
+// }
+//   }
+//
+//
+//
+// pg.pop();
 
 }
