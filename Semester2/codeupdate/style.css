@@ -14,8 +14,7 @@ body {
 }
 
 .didatic {
-	font-family: monospace;
-	background-color: #FF0000;
+	font-family: Roboto+Mono;
 	color: #00000;
 	font-size: 24pt;
 	padding: 10px;
