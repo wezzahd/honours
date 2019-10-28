@@ -37,13 +37,17 @@ function mousePressed(){
 if (mouseY > height -100 && mouseY < height){
 
   did_toggle = !did_toggle;
+
+  if (did_toggle == true){
+    didactic();
+  }else{
+    text_dict.remove();
+  }
+
+
 }
 
-if (did_toggle == true){
-  didactic();
-}else{
-  text_dict.remove();
-}
+
 
 
 
