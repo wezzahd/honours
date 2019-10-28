@@ -47,6 +47,6 @@ function instructions () {
 
   var $scrollableElement = document.querySelector('.didatic');
   scrollLock.disablePageScroll($scrollableElement);
-
+console.log($scrollableElement);
 
 }

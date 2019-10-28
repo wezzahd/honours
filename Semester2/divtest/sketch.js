@@ -28,7 +28,7 @@ text_dict.size(width- 20, height - 100);
 
 var $scrollableElement = document.querySelector('.didatic');
 scrollLock.disablePageScroll($scrollableElement);
-
+console.log($scrollableElement);
 }
 
 

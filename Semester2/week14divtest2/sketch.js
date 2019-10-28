@@ -68,11 +68,11 @@ var pixel, info, close;
 
 var text_dict;
 
-document.addEventListener('touchmove', function(event) {
-  if (event.scale !== 1) {
-    event.preventDefault();
-  }
-}, false);
+// document.addEventListener('touchmove', function(event) {
+//   if (event.scale !== 1) {
+//     event.preventDefault();
+//   }
+// }, false);
 
 
 function preload() {
@@ -207,10 +207,10 @@ function windowResized() {
 }
  }
 }
-
-function touchMoved(event) {
-  return false;
-}
+//
+// function touchMoved(event) {
+//   return false;
+// }
 
 function mousePressed() {
 
