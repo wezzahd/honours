@@ -29,9 +29,9 @@ function loadingScreen() {
 }
   }
 
-  if (instruction_toggle == true) {
-  instructions();
-  }
+  // if (instruction_toggle == true) {
+  // instructions();
+  // }
 
   image(pg, 0, 0);
 }
@@ -47,7 +47,6 @@ function instructions () {
 
   var $scrollableElement = document.querySelector('.didatic');
   scrollLock.disablePageScroll($scrollableElement);
-
 
 
 }
