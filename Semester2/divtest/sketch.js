@@ -37,6 +37,8 @@ function mousePressed(){
 
 if (did_toggle == true){
   didactic();
+  fill(0);
+  ellipse(width/2,height/2,20);
 }else{
   text_dict.remove();
 }
