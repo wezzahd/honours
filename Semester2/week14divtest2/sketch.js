@@ -195,7 +195,7 @@ function windowResized() {
     centerCanvas();
     pg = createGraphics(width, height);
     loadingScreen();
-    text_dict.size(width- 20, height - 250);
+      text_dict.size(width- 20, height/2);
     inst_button.style('top', (height-70)+'px');
 
   }
@@ -210,7 +210,7 @@ function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
     pg = createGraphics(width, height);
     loadingScreen();
-     text_dict.size(width- 20, height - 250);
+    text_dict.size(width- 20, height - (height/4));
   inst_button.style('top', (height-70)+'px');
 }
  }
