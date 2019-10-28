@@ -45,8 +45,8 @@ text_dict.position(20,100);
 text_dict.size(width- 20, height - 100);
 
 var $scrollableElement = document.querySelector('.didatic');
-//scrollLock.disablePageScroll($scrollableElement);
-scrollLock.enablePageScroll();
+scrollLock.disablePageScroll($scrollableElement);
+//scrollLock.PageScroll();
 //
 }
 
