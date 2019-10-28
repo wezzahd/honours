@@ -66,8 +66,6 @@ var count = 0;
 
 var pixel, info, close;
 
-var text_dict;
-
 document.addEventListener('touchmove', function(event) {
   if (event.scale !== 1) {
     event.preventDefault();
@@ -218,7 +216,6 @@ function mousePressed() {
    if (mouseIsPressed == true && mouseX > (buttonx - 35) && mouseX < (buttonx + 35) && mouseY > (buttony - 35) && mouseY < (buttony + 35) && main_animation ==  false) {
     noiseSetup();
      main_animation = true;
-     text_dict.remove();
   }
 
     if (mouseX > width/3 && mouseX < width -(width/3) && mouseY > 0 && mouseY < 70 && isMobile == false) {
@@ -247,11 +244,6 @@ function mousePressed() {
 
   if (mouseX > (width-90) && mouseX < (width) && mouseY > 0 && mouseY < 90) {
     instruction_toggle = !instruction_toggle;
-    if (instruction_toggle == true){
-      didactic();
-    }else{
-      text_dict.remove();
-    }
   }
 
   if (mouseX < width && mouseX > 0 && main_animation == true) {
