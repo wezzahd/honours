@@ -14,7 +14,6 @@ function draw() {
 
   image(capture,0,0, width,height);
 
-
 }
 
 function didactic() {
