@@ -25,6 +25,9 @@ function didactic() {
 text_dict.class("didatic");
 text_dict.position(20, 20);
 text_dict.size(width- 20, height - 100);
+
+var $scrollableElement = document.querySelector('.didatic');
+scrollLock.enablePageScroll($scrollableElement);
 }
 
 
