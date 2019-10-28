@@ -244,6 +244,11 @@ function mousePressed() {
 
   if (mouseX > (width-90) && mouseX < (width) && mouseY > 0 && mouseY < 90) {
     instruction_toggle = !instruction_toggle;
+    if (instruction_toggle == true){
+      didactic();
+    }else{
+      text_dict.remove();
+    }
   }
 
   if (mouseX < width && mouseX > 0 && main_animation == true) {
