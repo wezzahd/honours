@@ -263,11 +263,11 @@ function mousePressed() {
     if (instruction_toggle == true){
       instructions();
     }else{
+      inst.remove();
       text_dict.remove();
       link.remove();
       inst_button.remove();
       fullscr.remove();
-      inst.remove();
     }
   }
 
