@@ -67,6 +67,9 @@ var count = 0;
 var pixel, info, close;
 
 var text_dict;
+let inst_button;
+let fullscr;
+let inst;
 
 // document.addEventListener('touchmove', function(event) {
 //   if (event.scale !== 1) {
@@ -192,6 +195,9 @@ function windowResized() {
     centerCanvas();
     pg = createGraphics(width, height);
     loadingScreen();
+    text_dict.size(width- 20, height - 250);
+    inst_button.style('top', (height-70)+'px');
+
   }
 }else{
   //if (isMobile ==false &&
@@ -204,6 +210,8 @@ function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
     pg = createGraphics(width, height);
     loadingScreen();
+     text_dict.size(width- 20, height - 250);
+  inst_button.style('top', (height-70)+'px');
 }
  }
 }
@@ -216,6 +224,11 @@ function mousePressed() {
 
 
    if (mouseIsPressed == true && mouseX > (buttonx - 35) && mouseX < (buttonx + 35) && mouseY > (buttony - 35) && mouseY < (buttony + 35) && main_animation ==  false) {
+     text_dict.remove();
+     link.remove();
+     inst_button.remove();
+     fullscr.remove();
+     inst.remove();
     noiseSetup();
      main_animation = true;
   }
@@ -226,6 +239,7 @@ function mousePressed() {
     //Remove vert scroll bar in fullScreen
      document.body.scrollTop = 0; // <-- pull the page back up to the top
     document.body.style.overflow = 'hidden';
+
   }
 
 
@@ -235,13 +249,13 @@ function mousePressed() {
 
   }
 
-  if (instruction_toggle == true && isMobile == false && mouseY > height/4 + 20  && mouseY < height/4 + 40) {
-    window.open("https://www.wesleydowling.com");
-  }
-
-  if (instruction_toggle == true && isMobile == true && mouseY > height/6 + 10  && mouseY < height/6 + 30) {
-    window.location.assign("https://www.wesleydowling.com");
-  }
+  // if (instruction_toggle == true && isMobile == false && mouseY > height/4 + 20  && mouseY < height/4 + 40) {
+  //   window.open("https://www.wesleydowling.com");
+  // }
+  //
+  // if (instruction_toggle == true && isMobile == true && mouseY > height/6 + 10  && mouseY < height/6 + 30) {
+  //   window.location.assign("https://www.wesleydowling.com");
+  // }
 
 
   if (mouseX > (width-90) && mouseX < (width) && mouseY > 0 && mouseY < 90) {
@@ -250,6 +264,10 @@ function mousePressed() {
       instructions();
     }else{
       text_dict.remove();
+      link.remove();
+      inst_button.remove();
+   fullscr.remove();
+   inst.remove();
     }
   }
 

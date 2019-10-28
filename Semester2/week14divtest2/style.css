@@ -17,9 +17,17 @@ canvas {
   display: block;
 }
 
-.didatic {
+.didactic {
 	font-family: monospace;
 	color: #000000;
 	font-size: 16pt;
   overflow:auto;
+}
+
+.didacticcenter {
+	font-family: monospace;
+	color: #000000;
+	font-size: 16pt;
+  text-align: center;
+  display: block
 }
