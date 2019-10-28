@@ -14,10 +14,6 @@ function draw() {
 
   image(capture,0,0, width,height);
 
-  if (did_toggle == true){
-  fill(0);
-  rect(width/2,height/2,20,20);
-  }
 
 }
 
@@ -41,11 +37,11 @@ function mousePressed(){
 
   did_toggle = !did_toggle;
 
-// if (did_toggle == true){
-//   didactic();
-// }else{
-//   text_dict.remove();
-// }
+if (did_toggle == true){
+  didactic();
+}else{
+  text_dict.remove();
+}
 
 
 
