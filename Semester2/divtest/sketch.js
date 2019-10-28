@@ -13,6 +13,12 @@ function draw() {
   background(220);
 
   image(capture,0,0, width,height);
+
+  if (did_toggle == true){
+  fill(0);
+  rect(width/2,height/2,20,20);
+  }
+
 }
 
 function didactic() {
@@ -35,13 +41,11 @@ function mousePressed(){
 
   did_toggle = !did_toggle;
 
-if (did_toggle == true){
-  didactic();
-  fill(0);
-  ellipse(width/2,height/2,20);
-}else{
-  text_dict.remove();
-}
+// if (did_toggle == true){
+//   didactic();
+// }else{
+//   text_dict.remove();
+// }
 
 
 
