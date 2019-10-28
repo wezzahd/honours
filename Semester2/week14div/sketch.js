@@ -218,6 +218,7 @@ function mousePressed() {
    if (mouseIsPressed == true && mouseX > (buttonx - 35) && mouseX < (buttonx + 35) && mouseY > (buttony - 35) && mouseY < (buttony + 35) && main_animation ==  false) {
     noiseSetup();
      main_animation = true;
+     text_dict.remove();
   }
 
     if (mouseX > width/3 && mouseX < width -(width/3) && mouseY > 0 && mouseY < 70 && isMobile == false) {
