@@ -234,8 +234,12 @@ function remove_elements(){
 function mousePressed() {
 
 
-   if (mouseIsPressed == true && mouseX > (buttonx - 35) && mouseX < (buttonx + 35) && mouseY > (buttony - 35) && mouseY < (buttony + 35) && main_animation ==  false) {
-  remove_elements();
+   if  (mouseX > (buttonx - 35) && mouseX < (buttonx + 35) && mouseY > (buttony - 35) && mouseY < (buttony + 35) && main_animation ==  false) {
+
+     if (instruction_toggle == true){
+       remove_elements();
+     }
+
     noiseSetup();
      main_animation = true;
   }
