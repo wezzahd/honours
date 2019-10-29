@@ -21,7 +21,7 @@ let click = createP('CLICK HERE');
 
 click.class("click");
 click.style('position','absolute');
-click.style('top', (height-70)+'px');
+click.style('top', (height-120)+'px');
 
 
 }
