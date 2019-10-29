@@ -69,7 +69,7 @@ var pixel, info, close;
 var text_dict;
 let inst_button;
 let fullscr;
-let inst;
+let inst_text;
 
 // document.addEventListener('touchmove', function(event) {
 //   if (event.scale !== 1) {
@@ -225,7 +225,7 @@ function remove_elements(){
   link.remove();
   inst_button.remove();
   fullscr.remove();
-  inst.remove();
+  inst_text.remove();
 }
 
 

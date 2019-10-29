@@ -85,16 +85,16 @@ fullscr.style('position','absolute');
 
 
   if (isMobile == false) {
-    inst = createDiv('Instructions: click to reset');
-  inst.class("didacticleft");
-    inst.position(20, 90);
+    inst_text = createDiv('Instructions: click to reset');
+  inst_text.class("didacticleft");
+    inst_text.position(20, 90);
   }else{
-      inst = createDiv('Instructions: tap to reset');
-    inst.class("didacticleft");
-    inst.position(20, 90);
+      inst_text = createDiv('Instructions: tap to reset');
+    inst_text.class("didacticleft");
+    inst_text.position(20, 90);
   }
 
-
+ 
 
 
   if (isMobile == true){
