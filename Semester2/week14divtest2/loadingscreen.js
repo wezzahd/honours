@@ -85,11 +85,11 @@ fullscr.style('position','absolute');
 
 
   if (isMobile == false) {
-    inst = createP('Instructions: click to reset');
+    inst = createDiv('Instructions: click to reset');
   inst.class("didacticleft");
     inst.position(20, 70);
   }else{
-      inst = createP('Instructions: tap to reset');
+      inst = createDiv('Instructions: tap to reset');
     inst.class("didacticleft");
     inst.position(20, 70);
   }
