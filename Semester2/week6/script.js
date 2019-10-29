@@ -60,12 +60,5 @@ video.addEventListener('play', () => {
            drawBox.draw(canvas)
 
          })
-
-
-
-
-
-
-
   }, 1000)
 })
