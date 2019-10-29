@@ -84,17 +84,17 @@ fullscr.style('position','absolute');
   //link.size(width- 20, height - 200);
 
 
-  if (isMobile == false) {
-    inst_text = createDiv('Instructions: click to reset');
-  inst_text.class("didacticleft");
-    inst_text.position(20, 90);
-  }else{
-      inst_text = createDiv('Instructions: tap to reset');
-    inst_text.class("didacticleft");
-    inst_text.position(20, 90);
-  }
+  // if (isMobile == false) {
+  //   inst_text = createDiv('Instructions: click to reset');
+  // inst_text.class("didacticleft");
+  //   inst_text.position(20, 90);
+  // }else{
+  //     inst_text = createDiv('Instructions: tap to reset');
+  //   inst_text.class("didacticleft");
+  //   inst_text.position(20, 90);
+  // }
 
- 
+
 
 
   if (isMobile == true){

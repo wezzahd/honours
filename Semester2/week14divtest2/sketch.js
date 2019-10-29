@@ -225,7 +225,7 @@ function remove_elements(){
   link.remove();
   inst_button.remove();
   fullscr.remove();
-  inst_text.remove();
+//  inst_text.remove();
 }
 
 
