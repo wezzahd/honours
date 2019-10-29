@@ -220,15 +220,22 @@ function windowResized() {
 //   return false;
 // }
 
+function remove_elements(){
+  text_dict.remove();
+  link.remove();
+  inst_button.remove();
+  fullscr.remove();
+  inst.remove();
+}
+
+
+
+
 function mousePressed() {
 
 
    if (mouseIsPressed == true && mouseX > (buttonx - 35) && mouseX < (buttonx + 35) && mouseY > (buttony - 35) && mouseY < (buttony + 35) && main_animation ==  false) {
-     text_dict.remove();
-     link.remove();
-     inst_button.remove();
-     fullscr.remove();
-     inst.remove();
+  remove_elements();
     noiseSetup();
      main_animation = true;
   }
@@ -249,13 +256,6 @@ function mousePressed() {
 
   }
 
-  // if (instruction_toggle == true && isMobile == false && mouseY > height/4 + 20  && mouseY < height/4 + 40) {
-  //   window.open("https://www.wesleydowling.com");
-  // }
-  //
-  // if (instruction_toggle == true && isMobile == true && mouseY > height/6 + 10  && mouseY < height/6 + 30) {
-  //   window.location.assign("https://www.wesleydowling.com");
-  // }
 
 
   if (mouseX > (width-90) && mouseX < (width) && mouseY > 0 && mouseY < 90) {
@@ -263,11 +263,7 @@ function mousePressed() {
     if (instruction_toggle == true){
       instructions();
     }else{
-      inst.remove();
-      text_dict.remove();
-      link.remove();
-      inst_button.remove();
-      fullscr.remove();
+      remove_elements();
     }
   }
 
