@@ -31,21 +31,28 @@ Presentation.
 
 Week 8 - https://code.wesleydowling.com/honours/semester2/week8/
 ChangeLog:
-MoirePatterns, overlay fixes and Pgraphics masking.
+MoirePatterns, overlay fixes and PGraphics masking.
 
 
 Week 9 - https://code.wesleydowling.com/honours/semester2/week9/
 ChangeLog:
 Code - Testing restriction of colour palette (warm colours)
 
-Week 10 -
+Week 10 - https://code.wesleydowling.com/honours/semester2/weekz10/
+ChangeLog:
+MoirePatterns, overlay fixes and PGraphics masking.
 
-Week 11 -
 
-Week 12 -
+Week 11 - https://wdowlingarchive.home.blog/2019/11/01/semester-2-week-11-exegesis-chapter-four/
+Exegesis
+
+Week 12 - https://wdowlingarchive.home.blog/2019/11/01/semester-2-week-12-exegesis-chapter-five/
+Exegesis
 
 Week 13 - https://code.wesleydowling.com/honours/semester2/weekz13/
-ChangeLog: Testing inserting DOM elements with P5. - scrolling text for didactics.
+ChangeLog:
+Testing inserting DOM elements with P5. - scrolling text for didactics.
 
 Week 14 - https://code.wesleydowling.com/honours/semester2/weekz14/
-Changelog: DOM code integration.
+Changelog:
+DOM code integration, RGB Variations, Multi-Cam for testing.
