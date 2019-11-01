@@ -15,8 +15,9 @@ function make2Darray(cols, rows) {
   return arr;
 }
 
-function capturecam() {
-  capture = createCapture(VIDEO, ready);
+function capturecam(n) {
+//  capture = createCapture(VIDEO, ready);
+  capture = createCapture(n);
   capture.elt.setAttribute('playsinline', '');
   //capture.size(width, height);
   capture.hide();

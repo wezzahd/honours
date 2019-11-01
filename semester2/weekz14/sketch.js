@@ -20,7 +20,7 @@ var countermax = 1000; //update
 var lerper = 0;
 var inner;
 var reset = false;
-var lfotri = 0;
+var sine, sine2, sine3;
 var genderhue;
 
 var mousetimer = false;
@@ -71,6 +71,13 @@ let inst_button;
 let fullscr;
 let inst_text;
 
+var rsine =1;
+var gsine = 1;
+var bsine = 1;
+
+var constraints0, constraints1, constrains2, constrains3 ;
+
+
 // document.addEventListener('touchmove', function(event) {
 //   if (event.scale !== 1) {
 //     event.preventDefault();
@@ -93,6 +100,7 @@ function preload() {
     isAndroid = true;
   }
 preload_facedetection();
+
 }
 
 function setup() {
@@ -172,6 +180,7 @@ if( updateDetectRunning == true){
 
 //console.log('camerashutter ' +init);
 //console.log("counter " +counter)
+
 
 
 }
@@ -290,7 +299,7 @@ function keyPressed() {
 
   }
 
-  if (key == 'r' || key == 'R') {
+  if (key == 'x' || key == 'X') {
     console.log("reset");
     for (y = 0; y < rows; y++) {
       for (x = 0; x < cols; x++) {
@@ -298,5 +307,57 @@ function keyPressed() {
       }
    }
 }
+
+if (key == 'r' || key == 'R') { //red dominant
+console.log("red dominant");
+rsine = 1;
+gsine = sine;
+bsine = sine;
+}
+
+if (key == 'g' || key == 'G') { //green dominant
+console.log("green dominant");
+  rsine = sine;
+  gsine = 1;
+  bsine = sine;
+}
+
+if (key == 'b' || key == 'B') { //blue dominant
+console.log("blue dominant");
+  rsine = sine;
+  gsine = sine;
+  bsine = 1;
+}
+
+if (key == 'c' || key == 'C') { //reset
+console.log("reset");
+  rsine = 1;
+  gsine = 1;
+  bsine = 1;
+}
+
+
+if (key == '0') { //reset
+console.log("camera0");
+  capturecam(constraints0);
+}
+
+
+
+if (key == '1') { //reset
+console.log("camera1");
+  capturecam(constraints1);
+}
+
+if (key == '2') { //reset
+console.log("camera2");
+  capturecam(constraints2);
+}
+
+if (key == '3') { //reset
+console.log("camera3");
+  capturecam(constraints3);
+}
+
 
 }

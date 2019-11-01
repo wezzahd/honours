@@ -27,7 +27,7 @@ function noiseDraw() {
 //console.log('particle count ' + (cols*rows));
 //console.log(capture.width, capture.height);
 
-  //lfo();
+  lfo(3);
 
   if (counter < countermax) {
     counter = counter + 1;
@@ -121,22 +121,12 @@ function calculateForce(x, y, z) {
   return noise(x * scl + xMove, y * scl + yMove, z + zMove);
 }
 
-function lfo () {
+function lfo (n) {
 
-if (lfotri < 1) {
-  lfotri = lfotri + (frameCount/1000000);
-//  console.log(lfotri);
-}
+sine = map (1 * sin(TWO_PI * frameCount/(100*n)), -1, 1, 0.2, 0.5);
+sine2 = map( 1 * sin(TWO_PI * frameCount/(100*n*2)),-1, 1, 0.2, 0.5);
+sine3 = map(1 * sin(TWO_PI * frameCount/(100*n*2)),-1, 1, 0.2, 0.5);
 
-if (lfotri >= 1){
-
-
-  gohome = !gohome;
-reset = !reset;
-lfotri = 0;
-console.log(gohome);
- console.log(reset);
-}
 }
 
 function goHome() {

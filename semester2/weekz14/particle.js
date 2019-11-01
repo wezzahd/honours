@@ -17,6 +17,7 @@ class Particle {
     this.maxforce = 0.01;
     this.value = 1;
     this.gohome = gohome;
+    this.sine = 0.0;
   }
 
   setToColor(r, g, b) {
@@ -82,12 +83,14 @@ class Particle {
         //this.lerper = 0;
         this.sizerr = lerp(1.0,this.sizerr,lerper);
         this.alpha = lerp(255,this.alpha,lerper);
+        this.sine = lerp(1.0,this.sine,lerper);
         }
 
       if (gohome == true) {
         //this.lerper = 0;
         this.sizerr = lerp(1.0,this.sizerr,lerper);
         this.alpha = lerp(255,this.alpha,lerper);
+        this.sine = lerp(1.0,this.sine,lerper);
         //this.sizerr = lerp(this.sizerr,1.0,lerper);
         //this.alpha = lerp(this.alpha,255,lerper);
         }
@@ -143,26 +146,28 @@ arrive(target) {
   display() {
       //RED
 
+
+
       push();
-      stroke(this.rgb.x, 0,0,this.alpha);
-      fill(this.rgb.x, 0,0,this.alpha);
+      stroke(this.rgb.x, 0,0,(this.alpha));
+      fill(this.rgb.x, 0,0,(this.alpha));
       rectMode(CENTER);
 //       //rect(this.position.x,this.position.y,this.size,this.size);
-      rect(this.pos.x+(this.size/3), this.pos.y, (this.size/3)*this.sizerr, this.size * this.sizerr);
+      rect(this.pos.x+(this.size/3), this.pos.y, (this.size/3)*this.sizerr*rsine, this.size * this.sizerr*rsine);
 
 //       //GREEN
-      stroke(0, this.rgb.y,0,this.alpha);
-      fill(0, this.rgb.y,0,this.alpha);
+      stroke(0, this.rgb.y,0, (this.alpha));
+      fill(0, this.rgb.y,0,(this.alpha));
       rectMode(CENTER);
 //      //rect(this.position.x,this.position.y,this.size,this.size);
-      rect(this.pos.x+(this.size/3*2), this.pos.y, (this.size/3)*this.sizerr, this.size * this.sizerr);
+      rect(this.pos.x+(this.size/3*2), this.pos.y, (this.size/3)*this.sizerr*gsine, this.size * this.sizerr*gsine);
 
 // //       //BLUE
-       stroke(0, 0, this.rgb.z,this.alpha);
-       fill(0, 0, this.rgb.z,this.alpha);
+       stroke(0, 0, this.rgb.z,(this.alpha));
+       fill(0, 0, this.rgb.z,(this.alpha));
        rectMode(CENTER);
 //     //  rect(this.position.x,this.position.y,this.size,this.size);
-      rect(this.pos.x+(this.size/3*3), this.pos.y, (this.size/3)*this.sizerr, this.size * this.sizerr);
+      rect(this.pos.x+(this.size/3*3), this.pos.y, (this.size/3)*this.sizerr*bsine, this.size * this.sizerr*bsine);
       pop();
 
     }
