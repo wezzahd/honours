@@ -1,12 +1,20 @@
 # honours
-Honours Specialisation Archives - Semester 2 Weekly Coding Projects
 
-Week 1 -  https://code.wesleydowling.com/honours/semester2/week1/
+## Honours Specialisation Archives
+
+Semester 2 Weekly Coding Projects
+
+### Week 1
+
+https://code.wesleydowling.com/honours/semester2/week1/
 
 ChangeLog:
+
 Initial experiments - Perlin noise flowfield, water surface - local application of repelling forces, return to initial position.
 
-Week 2 - https://code.wesleydowling.com/honours/semester2/week2/
+### Week 2
+
+https://code.wesleydowling.com/honours/semester2/week2/
 
 ChangeLog:
 Color Flocking - Reverse Engineering.
@@ -53,9 +61,11 @@ MoirePatterns, overlay fixes and PGraphics masking.
 
 
 Week 11 - https://wdowlingarchive.home.blog/2019/11/01/semester-2-week-11-exegesis-chapter-four/
+
 Exegesis
 
 Week 12 - https://wdowlingarchive.home.blog/2019/11/01/semester-2-week-12-exegesis-chapter-five/
+
 Exegesis
 
 Week 13 - https://code.wesleydowling.com/honours/semester2/weekz13/
