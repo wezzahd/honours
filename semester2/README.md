@@ -1,6 +1,6 @@
 # honours
 
-## Honours Specialisation Archives
+## Honours Specialisation Primary Archive
 
 Semester 2 Weekly Coding Projects
 
@@ -8,69 +8,102 @@ Semester 2 Weekly Coding Projects
 
 https://code.wesleydowling.com/honours/semester2/week1/
 
-####ChangeLog:
-Initial experiments - Perlin noise flowfield, water surface - local application of repelling forces, return to initial position.
+ChangeLog:
+* Initial experiments - Perlin noise flowfield
+* Water surface - local application of repelling forces, return to initial position.
 
-### Week 2
+### [Week 2](https://github.com/wezzahd/honours/tree/master/semester2/week2/)
 
 https://code.wesleydowling.com/honours/semester2/week2/
 
 ChangeLog:
-Color Flocking - Reverse Engineering.
+* Color Flocking - Reverse Engineering.
 
-Week 3 - https://code.wesleydowling.com/honours/semester2/week3/
+### [Week 3](https://github.com/wezzahd/honours/tree/master/semester2/week3/)
 
-ChangeLog:
-Webcam capture, subpixel sample and display.
-
-Week 4 - https://code.wesleydowling.com/honours/semester2/week4/
+https://code.wesleydowling.com/honours/semester2/week3/
 
 ChangeLog:
-Noise, hue and seek algorithm
+* Webcam capture
+* Subpixel sample and display.
 
-Week 5 - https://code.wesleydowling.com/honours/semester2/week5/
+### [Week 4](https://github.com/wezzahd/honours/tree/master/semester2/week4/)
 
-ChangeLog:
-MoirePatterns, PGraphics image layers with rotation.
-
-Week 6 - https://code.wesleydowling.com/honours/semester2/week6/
-ChangeLog:
-Face-api.js, P5js integration.
-
-Week 7 - https://code.wesleydowling.com/honours/semester2/week7/
+https://code.wesleydowling.com/honours/semester2/week4/
 
 ChangeLog:
-Presentation.
+* Noise algorithm
+* Seek algorithm by hue.
 
-Week 8 - https://code.wesleydowling.com/honours/semester2/week8/
+### [Week 5](https://github.com/wezzahd/honours/tree/master/semester2/week5/)
 
-ChangeLog:
-MoirePatterns, overlay fixes and PGraphics masking.
-
-
-Week 9 - https://code.wesleydowling.com/honours/semester2/week9/
+https://code.wesleydowling.com/honours/semester2/week5/
 
 ChangeLog:
-Code - Testing restriction of colour palette (warm colours)
+* MoirePatterns
+* PGraphics image layers with rotation.
 
-Week 10 - https://code.wesleydowling.com/honours/semester2/weekz10/
+### [Week 6](https://github.com/wezzahd/honours/tree/master/semester2/week6/)
+
+https://code.wesleydowling.com/honours/semester2/week6/
 
 ChangeLog:
-MoirePatterns, overlay fixes and PGraphics masking.
+* Face-api.js
+* P5js integration.
 
+### [Week 7](https://github.com/wezzahd/honours/tree/master/semester2/week7/)
 
-Week 11 - https://wdowlingarchive.home.blog/2019/11/01/semester-2-week-11-exegesis-chapter-four/
+https://code.wesleydowling.com/honours/semester2/week7/
 
-Exegesis
-
-Week 12 - https://wdowlingarchive.home.blog/2019/11/01/semester-2-week-12-exegesis-chapter-five/
-
-Exegesis
-
-Week 13 - https://code.wesleydowling.com/honours/semester2/weekz13/
 ChangeLog:
-Testing inserting DOM elements with P5. - scrolling text for didactics.
+* Presentation.
 
-Week 14 - https://code.wesleydowling.com/honours/semester2/weekz14/
+### [Week 8](https://github.com/wezzahd/honours/tree/master/semester2/week8/)
+
+https://code.wesleydowling.com/honours/semester2/week8/
+
+ChangeLog:
+* MoirePatterns
+* overlay fixes and PGraphics masking.
+
+### [Week 9](https://github.com/wezzahd/honours/tree/master/semester2/week9/)
+
+https://code.wesleydowling.com/honours/semester2/week9/
+
+ChangeLog:
+* Code - Testing restriction of colour palette (warm colours).
+
+### [Week 10](https://github.com/wezzahd/honours/tree/master/semester2/weekz10/)
+
+https://code.wesleydowling.com/honours/semester2/weekz10/
+
+ChangeLog:
+* MoirePatterns, overlay fixes and PGraphics masking.
+
+
+### Week 11 - Exegesis
+
+https://wdowlingarchive.home.blog/2019/11/01/semester-2-week-11-exegesis-chapter-four/
+
+
+### Week 12 - Exegesis
+
+https://wdowlingarchive.home.blog/2019/11/01/semester-2-week-12-exegesis-chapter-five/
+
+
+### [Week 13](https://github.com/wezzahd/honours/tree/master/semester2/weekz13/)
+
+https://code.wesleydowling.com/honours/semester2/weekz13/
+
+ChangeLog:
+* Testing inserting DOM elements with P5.
+* Scrolling text for didactics.
+
+### [Week 14](https://github.com/wezzahd/honours/tree/master/semester2/weekz14/)
+
+https://code.wesleydowling.com/honours/semester2/weekz14/
+
 Changelog:
-DOM code integration, RGB Variations, Multi-Cam for testing.
+* DOM code integration
+* RGB Variations
+* Multi-Cam for testing.
