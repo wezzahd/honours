@@ -8,8 +8,7 @@ Semester 2 Weekly Coding Projects
 
 https://code.wesleydowling.com/honours/semester2/week1/
 
-ChangeLog:
-
+####ChangeLog:
 Initial experiments - Perlin noise flowfield, water surface - local application of repelling forces, return to initial position.
 
 ### Week 2
