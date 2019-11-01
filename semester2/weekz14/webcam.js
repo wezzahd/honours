@@ -26,7 +26,7 @@ let cameras = [];
          }
 
        });
-     //console.log(cameras[0].id);
+     //console.log(cameras);
      constraints0 = {
          video: {
             deviceId: cameras[0].id,
