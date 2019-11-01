@@ -4,7 +4,7 @@
 
 Semester 2 Weekly Coding Projects
 
-### Week 1
+### [Week 1](https://github.com/wezzahd/honours/tree/master/semester2/week1)
 
 https://code.wesleydowling.com/honours/semester2/week1/
 
