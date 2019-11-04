@@ -26,7 +26,7 @@ var intersect_toggle = false;
 
 var eraser_size;
 
-var main_animation = false;
+var main_animation = true;
 
 var loading_cap;
 
