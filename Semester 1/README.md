@@ -1,6 +1,6 @@
 # honours
 
-## Honours Specialisation Primary Archive
+## Honours Specialisation Secondary Archive
 
 Semester 1 Weekly Coding Projects
 
