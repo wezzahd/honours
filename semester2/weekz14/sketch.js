@@ -75,7 +75,7 @@ var rsine =1;
 var gsine = 1;
 var bsine = 1;
 
-var constraints0, constraints1, constrains2, constrains3 ;
+var constraints0, constraints1, constrains2, constrains3;
 
 
 // document.addEventListener('touchmove', function(event) {
