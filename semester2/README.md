@@ -107,3 +107,12 @@ Changelog:
 * DOM code integration
 * RGB Variations
 * Multi-Cam for testing.
+
+### [Week 15](https://github.com/wezzahd/honours/tree/master/semester2/weekz15/)
+
+https://code.wesleydowling.com/honours/semester2/weekz15/
+
+Changelog:
+* Testing and updates to main site.
+* Integrated DOM code
+* Changed timings counter and lerper increment.
