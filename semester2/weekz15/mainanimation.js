@@ -32,9 +32,9 @@ function noiseDraw() {
   if (counter < countermax) {
     counter = counter + 1;
       if (gohome == false){
-        lerper = constrain((lerper + 0.002),0,1);
+        lerper = constrain((lerper + 0.004),0,1);
         }else{
-          lerper = constrain((lerper - 0.002),0,1);
+          lerper = constrain((lerper - 0.004),0,1);
   }
 }
 
