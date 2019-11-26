@@ -20,14 +20,14 @@ canvas {
 .didactic {
 	font-family: monospace;
 	color: #000000;
-	font-size: 14pt;
+	font-size: 16pt;
   overflow:auto;
 }
 
 .didacticcenter {
 	font-family: monospace;
 	color: #000000;
-	font-size: 14pt;
+	font-size: 16pt;
   text-align: center;
   display: block
 }
@@ -35,7 +35,7 @@ canvas {
 .didacticleft {
 	font-family: monospace;
 	color: #000000;
-	font-size: 14pt;
+	font-size: 16pt;
   text-align: left;
   display: block
 }

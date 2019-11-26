@@ -227,6 +227,7 @@ function windowResized() {
     loadingScreen();
       text_dict.size(width- 20, height/2);
     inst_button.style('top', (height-70)+'px');
+    textResize();
 
   }
 }else{
@@ -240,8 +241,11 @@ function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
     pg = createGraphics(width, height);
     loadingScreen();
-    text_dict.size(width- 20, height - (height/4));
-  inst_button.style('top', (height-70)+'px');
+    text_dict.size((width-width/3), height/3);
+    text_dict.position(width/6,height/3);
+    inst_button.style('top', (height-70)+'px');
+      link.position(width/6, (height/3) -40);
+    textResize();
 }
  }
 }
@@ -258,7 +262,20 @@ function remove_elements(){
 //  inst_text.remove();
 }
 
+function textResize() {
 
+  if (width < 1000){
+    text_dict.style('font-size', 14 + 'pt');
+    inst_button.style('font-size', 14 + 'pt');
+    link.style('font-size', 14 + 'pt');
+    fullscr.style('font-size', 14 + 'pt');
+}else{
+  text_dict.style('font-size', 18 + 'pt');
+  inst_button.style('font-size', 18 + 'pt');
+  link.style('font-size', 18 + 'pt');
+  fullscr.style('font-size', 18 + 'pt');
+}
+}
 
 
 function mousePressed() {

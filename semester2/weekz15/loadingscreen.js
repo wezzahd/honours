@@ -55,6 +55,8 @@ if (instruction_toggle == true) {
 
 function instructions () {
 
+
+
   if (isMobile == false) {
     fullscr = createP('click here for fullscreen');
     fullscr.class("didacticcenter");
@@ -80,7 +82,11 @@ fullscr.style('position','absolute');
 
   link = createA('https://www.wesleydowling.com', 'Wesley Dowling');
   link.class("didacticleft");
+if(isMobile == true){
   link.position(20, 60);
+}else{
+  link.position(width/6, (height/3) -40);
+}
   //link.size(width- 20, height - 200);
 
 
@@ -120,10 +126,18 @@ fullscr.style('position','absolute');
   text_dict = createDiv('Code is an online generative work by Wesley Dowling that fragments and transforms photographs into pixelated flowing colour. Face detection algorithms capture the viewers image as an RGB subpixel array. The image is then sampled to initialize and produce an ever-changing generative colour field. The work occupies a liminal queer space that oscillates between states of photographic representation and abstraction.  The shifting composition is an outcome of research into how queering can be used to identify and subvert normative ideological assumptions in computational image making. Queering is used as a mode of resistance to scrutiny and surveillance by distorting the camera’s visual taxonomies through which people are recognized and regulated. The work undermines visual recognition to find a more open and variable mode of rendering that disrupts societal norms and essentialized notions of identity.');
 
   text_dict.class("didactic");
-  text_dict.position(20, height/4);
-  text_dict.size(width- 20, height/2);
 
 
+if (isMobile == false){
+  text_dict.size((width-width/3), height/3);
+  text_dict.position(width/6,height/3);
+}else{
+  text_dict.position(20, height/5);
+  text_dict.size(width-20, height);
+}
+
+
+  textResize();
 
   var $scrollableElement = document.querySelector('.didactic');
   scrollLock.disablePageScroll($scrollableElement);
