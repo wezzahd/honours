@@ -134,7 +134,7 @@ if( updateDetectRunning == false || frameCount <= 100 ){ //test framecount on ip
   image(pixel,width/2,height/2,skip,skip);
   pop();
   textAlign(CENTER,CENTER);
-  textFont("Roboto Mono");
+  textFont("monospace");
   text("loading",width/2,height/2+ 30);
   textAlign(LEFT,TOP);
 
