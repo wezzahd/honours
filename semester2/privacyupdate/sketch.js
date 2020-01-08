@@ -137,10 +137,12 @@ if( updateDetectRunning == false || frameCount <= 100 ){ //test framecount on ip
   textFont("Roboto Mono");
   text("loading",width/2,height/2+ 30);
   textAlign(LEFT,TOP);
-  textSize(14);
+
   if (width> height){
+    textSize(14);
   text("Privacy Notice: \nPlease note this website uses webcam image capture and face detection technologies to function.\nWebcam images and detection data is not saved by the website or uploaded to an external server or third party.",width/3,height/2+ 60, width/3, height/3);
 }else{
+  textSize(12);
   text("Privacy Notice: \nPlease note this website uses webcam image capture and face detection technologies to function.\nWebcam images and detection data is not saved by the website or uploaded to an external server or third party.",width/6,height/2+ 60, width-(width/6*2), height/3);
 
 }
